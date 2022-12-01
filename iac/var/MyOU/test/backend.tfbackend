@@ -1,0 +1,4 @@
+key            = "powerbi/terraform.tfstate"
+bucket         = "XXXX"
+dynamodb_table = "XXXX"
+region         = "eu-west-1"

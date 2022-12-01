@@ -1,0 +1,4 @@
+<powershell>
+Start-Service AmazonSSMAgent
+</powershell>
+<persist>true</persist>
