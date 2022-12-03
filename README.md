@@ -1,7 +1,12 @@
 # Deploying Power BI On-Premise Data Gateway on AWS, using Terraform
 (French version below)
 
+This repository focuses on Infra-As-Code. But a [blog post on Medium](https://medium.com/@paul.santus/running-power-bi-on-premises-data-gateway-on-aws-for-0-12-a-day-4fc3dc459add) covers it all, 
+including how to automate the software installation and configuration.
+
 # General architecture
+![Architure diagram](doc/architecture-diagram.png)
+
 This stack contains an AWS Auto Scaling Group, enabling to
 - schedule the periodic creation of an EC2 instance from an Amazon Machine Image  (AMI)
   - We start with a blank Windows server image, then once the Gateway is up and running, we replace it with an snapshot of the installed VM.
